@@ -82,8 +82,8 @@ int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
 		return 0;
 	}
 
-	//coap_add_option(pdu, opt, opt_len, data+4);
-	coap_add_option(pdu, opt, size-4, data+4);
+	coap_add_option(pdu, opt, opt_len, data+4);
+	//coap_add_option(pdu, opt, size-4, data+4);
 
 	coap_delete_pdu(pdu);
 	
